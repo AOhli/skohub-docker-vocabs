@@ -1,89 +1,89 @@
 @prefix apfelsorte: <https://example.org/apfelsorte/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 apfelsorte: a skos:ConceptScheme ;
-  dct:title "Apfelsorten"@de, "kind of apple"@en ;
+  dct:title "Apfelsorten"@de, "Kind of Apple"@en ;
   dct:creator "Andrea Ohlinger"@de ;
   dct:created "2022-02-19" ;
   dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  dct:description "Auflistung von Apfelsorten."@de, "Register of kind of apple"@en ;
+  dct:description "Auflistung von Apfelsorten"@de, "Register of kind of apple"@en ;
   skos:hasTopConcept apfelsorte:Adams-Parmaene, apfelsorte:Alkmene, apfelsorte:Cox-Orange, apfelsorte:Gala, apfelsorte:Geheimrat-Dr.-Oldenburg, apfelsorte:Golden-Delicious, apfelsorte:Jonagold, apfelsorte:Kidds-Orange-Red, apfelsorte:Red-Delicious, apfelsorte:Worcester-Parmaene .
   
 apfelsorte:Adams-Parmaene a skos:Concept ;
   skos:prefLabel "Adams Parmäne"@de, "Adams Pearmain"@en ;
-  skos:altLabel "Norfolk Pippin"@en, "Norfolk Russet"@en, "Hanging Pearmain"@en ;
-  skos:hiddenLabel: "Matchless"@en ;
+  skos:altLabel "Norfolk Pippin"@de, "Norfolk Russet"@de, "Hanging Pearmain"@de, "Adam's Parmane"@en, "Norfolk Pippin"@en ;
+  skos:hiddenLabel "Matchless"@de ;
   skos:topConceptOf apfelsorte: .
 
 apfelsorte:Alkmene a skos:Concept ;
   skos:prefLabel "Alkmene"@de, "Alkmene"@en ;
   skos:altLabel "Early Windsor"@en ;
   skos:historyNote "Züchtung als Ersatz-Sorte für den Cox Orange"@de, "Culture as replacement for Cox Orange"@de ;
-  skos:note "Kreuzung aus Cox Orange und Geheimrat Dr. Oldenburg"@de ;
-  skos:related "Cox-Orange" ;
+  skos:note "Kreuzung aus Cox Orange und Geheimrat Dr. Oldenburg"@de, "cross between Cox's Orange Pippin and Geheimrat Dr. Oldenburg"@en ;
+  skos:related apfelsorte:Cox-Orange, apfelsorte:Geheimrat-Dr.-Oldenburg ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:Cox-Orange a skos:Concept ;
   skos:prefLabel "Cox Orange"@de, "Cox's Orange Pippin"@en ;
   skos:altLabel "Cox Orangenrenette"@de, "Verbesserte Muskatrenette"@de, "Cox's Pomeranzen Pepping"@de, "Russet Pippin"@en ;
-  skos:related "Alkmene", "Kidds-Orange-Red" ;
+  skos:related apfelsorte:Alkmene, apfelsorte:Kidds-Orange-Red ;
   skos:topConceptOf apfelsorte: . 
   
 apfelsorte:Gala a skos:Concept ;
   skos:prefLabel "Gala"@de, "Gala"@en ;
-  skos:note "Kreuzung aus Kidds Orange Red und Golden Delicious"@de ;
-  skos:related "Golden-Delicious", "Kidds-Orange-Red" ;
-  skos:narrower "Royal-Gala" ;
+  skos:note "Kreuzung aus Kidds Orange Red und Golden Delicious"@de, "cross between Kidd's Orange Red and Golden Delicious"@en ;
+  skos:related apfelsorte:Golden-Delicious, apfelsorte:Kidds-Orange-Red ;
+  skos:narrower apfelsorte:Royal-Gala ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:Geheimrat-Dr.-Oldenburg a skos:Concept ;
   skos:prefLabel "Geheimrat Dr. Oldenburg"@de, "Geheimrat Dr. Oldenburg"@en ;
   skos:altLabel "Geheimrat Doktor Oldenburg"@de, "Geheimrat Oldenburg"@de, "Geheimrat Doktor Oldenburg"@en, "Geheimrat Oldenburg"@en ;
-  skos:hiddenLabel: "Oldenburg"@de, "Oldenburg"@en ;
-  skos:related "Alkmene" ;
+  skos:hiddenLabel "Oldenburg"@de, "Oldenburg"@en ;
+  skos:related apfelsorte:Alkmene ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:Golden-Delicious a skos:Concept ;
   skos:prefLabel "Golden Delicious"@de, "Golden Delicious"@en ;
   skos:altLabel "Gelber Köstlicher"@de, "Goldener Köstlicher"@de ;
-  skos:note "Kreuzung vermutlich aus Goldreinette und Grimes Golden"@de ;
-  skos:related "Gala", "Jonagold" ;
+  skos:note "Kreuzung vermutlich aus Goldreinette und Grimes Golden"@de, "cross between Golden Reinette and Grimes Golden"@en ;
+  skos:related apfelsorte:Gala, apfelsorte:Jonagold ;
   skos:topConceptOf apfelsorte: .
     
 apfelsorte:Jonagold a skos:Concept ;
   skos:prefLabel "Jonagold"@de, "Jonagold"@en ;
   skos:hiddenLabel "Jonagored"@de, "Red Prince"@de, "Jonagored"@en, "Red Prince"@en ;
   skos:note "Kreuzung aus Golden Delicious und Jonathan"@de ;
-  skos:related "Golden Delicious" ;
+  skos:related apfelsorte:Golden-Delicious ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:Kidds-Orange-Red a skos:Concept ;
   skos:prefLabel "Kidds Orange Red"@de, "Kidd's Orange Red"@en ;
   skos:altLabel "Kidd's Orange Red"@de, "Kidds Orange"@de, "Delco apple"@en ;
-  skos:note "Kreuzung aus Cox Orange und Red Delicious"@de ;
-  skos:related "Gala", "Cox-Orange", "Red Delicious" ;
+  skos:note "Kreuzung aus Cox Orange und Red Delicious"@de, "cross between Cox's Orange Pippin and Red Delicious"@en ;
+  skos:related apfelsorte:Gala, apfelsorte:Cox-Orange, apfelsorte:Red-Delicious ;
   skos:topConceptOf apfelsorte: .
     
 apfelsorte:Red-Delicious a skos:Concept ;
   skos:prefLabel "Red Delicious"@de, "Red Delicious"@en ;
   skos:altLabel "Roter Köstlicher"@de, "Stark Delicious"@de ;
-  skos:historyNote "ursprünglich Delicious"@de ;
+  skos:historyNote "ursprünglich Delicious"@de, "original Delicious"@en ; 
+  skos:related apfelsorte:Kidds-Orange-Red ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:Royal-Gala a skos:Concept ;
   skos:prefLabel "Royal Gala"@de, "Royal Gala"@en ;
   skos:altLabel "Gala Royal"@de, "Regal Gala"@de ;
-  skos:note "Mutant der Sorte Gala"@de ;
-  skos:broader "Gala" ;
+  skos:note "Mutant der Sorte Gala"@de, "mutant of the cultivar Gala"@de ;
+  skos:broader apfelsorte:Gala ;
   skos:inScheme apfelsorte: .
   
 apfelsorte:Worcester-Parmaene a skos:Concept ;
   skos:prefLabel "Worcester Parmäne"@de, "Worcester Pearmain"@en ;
-  skos:note "Kreuzung aus Devonshire Quarrenden und einer unbekannten Apfelsorte"@de ;
+  skos:note "Kreuzung aus Devonshire Quarrenden und einer unbekannten Apfelsorte"@de, "cross between Devonshire Quarrenden and an unknown parent"@en ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:parmaene a skos:Collection ;
   skos:prefLabel "Parmäne"@de, "Pearmain"@en ;
-  skos:member "apfelsorte:Adams-Parmaene", "apfelsorte:Worcester-Parmaene" .
+  skos:member apfelsorte:Adams-Parmaene, apfelsorte:Worcester-Parmaene .
