@@ -8,12 +8,34 @@ apfelsorte: a skos:ConceptScheme ;
   dct:creator "Andrea Ohlinger"@de ;
   dct:created "2022-02-19" ;
   dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  dct:description "Auflistung von Apfelsorten, die noch nicht ausgestorben sind."@de, "Register of kind of apple, which are unextinct yet."@en .
+  dct:description "Auflistung von Apfelsorten."@de, "Register of kind of apple"@en ;
+  skos:hasTopConcept apfelsorte:Adams-Parmäne, apfelsorte:Alkemene, apfelsorte:Cox-Orange, apfelsorte:Geheimrat-Dr.-Oldenburg .
   
 apfelsorte:Adams-Parmäne a skos:Concept ;
   skos:prefLabel "Adams Parmäne"@de, "Adams Pearmain"@en ;
   skos:altLabel "Norfolk Pippin"@en, "Norfolk Russet"@en, "Hanging Pearmain"@en ;
   skos:hiddenLabel: "Matchless"@en ;
   skos:topConceptOf apfelsorte: .
+
+apfelsorte:Alkmene a skos:Concept ;
+  skos:prefLabel "Alkmene"@de, "Alkmene"@en ;
+  skos:altLabel "Early Windsor"@en ;
+  skos:historyNote "Züchtung als Ersatz-Sorte für den Cox Orange"@de, "Culture as replacement for Cox Orange"@de ;
+  skos:note "Kreuzung aus Cox Orange und Geheimrat Dr. Oldenburg"@de ;
+  skos:related "Cox-Orange" ;
+  skos:topConceptOf apfelsorte: .
   
-apfelsorte: skos:hasTopConcept apfelsorte:Adams-Parmäne .
+apfelsorte:Cox-Orange a skos:Concept ;
+  skos:prefLabel "Cox Orange"@de, "Cox's Orange Pippin"@en ;
+  skos:altLabel "Cox Orangenrenette"@de, "Verbesserte Muskatrenette"@de, "Cox's Pomeranzen Pepping"@de, "Russet Pippin"@en ;
+  skos:related "Alkmene" ;
+  skos:topConceptOf apfelsorte: . 
+  
+ apfelsorte:Geheimrat-Dr.-Oldenburg a skos:Concept ;
+  skos:prefLabel "Geheimrat Dr. Oldenburg"@de, "Geheimrat Dr. Oldenburg"@en ;
+  skos:altLabel "Geheimrat Doktor Oldenburg"@de, "Geheimrat Oldenburg"@de, "Geheimrat Doktor Oldenburg"@en, "Geheimrat Oldenburg"@en ;
+  skos:hiddenLabel: "Oldenburg"@de, "Oldenburg"@en ;
+  skos:related "Alkmene" ;
+  skos:topConceptOf apfelsorte: .
+  
+  
