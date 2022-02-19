@@ -1,0 +1,19 @@
+@prefix apfelsorte: <https://example.org/apfelsorte/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+apfelsorte: a skos:ConceptScheme ;
+  dct:title "Apfelsorten"@de, "kind of apple"@en ;
+  dct:creator "Andrea Ohlinger"@de ;
+  dct:created "2022-02-19" ;
+  dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dct:description "Auflistung von Apfelsorten, die noch nicht ausgestorben sind."@de, "Register of kind of apple, which are unextinct yet."@en .
+  
+apfelsorte:Adams-Parmäne a skos:Concept ;
+  skos:prefLabel "Adams Parmäne"@de, "Adams Pearmain"@en ;
+  skos:altLabel "Norfolk Pippin"@en, "Norfolk Russet"@en, "Hanging Pearmain"@en ;
+  skos:hiddenLabel: "Matchless"@en ;
+  skos:topConceptOf apfelsorte: .
+  
+apfelsorte: skos:hasTopConcept apfelsorte:Adams-Parmäne .
