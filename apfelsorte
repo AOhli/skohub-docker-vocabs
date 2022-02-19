@@ -9,9 +9,9 @@ apfelsorte: a skos:ConceptScheme ;
   dct:created "2022-02-19" ;
   dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   dct:description "Auflistung von Apfelsorten."@de, "Register of kind of apple"@en ;
-  skos:hasTopConcept apfelsorte:Adams-Parmäne, apfelsorte:Alkemene, apfelsorte:Cox-Orange, apfelsorte:Geheimrat-Dr.-Oldenburg .
+  skos:hasTopConcept apfelsorte:Adams-Parmaene, apfelsorte:Alkmene, apfelsorte:Cox-Orange, apfelsorte:Gala, apfelsorte:Geheimrat-Dr.-Oldenburg, apfelsorte:Golden-Delicious, apfelsorte:Jonagold, apfelsorte:Kidds-Orange-Red, apfelsorte:Red-Delicious, apfelsorte:Worcester-Parmaene .
   
-apfelsorte:Adams-Parmäne a skos:Concept ;
+apfelsorte:Adams-Parmaene a skos:Concept ;
   skos:prefLabel "Adams Parmäne"@de, "Adams Pearmain"@en ;
   skos:altLabel "Norfolk Pippin"@en, "Norfolk Russet"@en, "Hanging Pearmain"@en ;
   skos:hiddenLabel: "Matchless"@en ;
@@ -28,14 +28,62 @@ apfelsorte:Alkmene a skos:Concept ;
 apfelsorte:Cox-Orange a skos:Concept ;
   skos:prefLabel "Cox Orange"@de, "Cox's Orange Pippin"@en ;
   skos:altLabel "Cox Orangenrenette"@de, "Verbesserte Muskatrenette"@de, "Cox's Pomeranzen Pepping"@de, "Russet Pippin"@en ;
-  skos:related "Alkmene" ;
+  skos:related "Alkmene", "Kidds-Orange-Red" ;
   skos:topConceptOf apfelsorte: . 
   
- apfelsorte:Geheimrat-Dr.-Oldenburg a skos:Concept ;
+apfelsorte:Gala a skos:Concept ;
+  skos:prefLabel "Gala"@de, "Gala"@en ;
+  skos:note "Kreuzung aus Kidds Orange Red und Golden Delicious"@de ;
+  skos:related "Golden-Delicious", "Kidds-Orange-Red" ;
+  skos:narrower "Royal-Gala" ;
+  skos:topConceptOf apfelsorte: .
+  
+apfelsorte:Geheimrat-Dr.-Oldenburg a skos:Concept ;
   skos:prefLabel "Geheimrat Dr. Oldenburg"@de, "Geheimrat Dr. Oldenburg"@en ;
   skos:altLabel "Geheimrat Doktor Oldenburg"@de, "Geheimrat Oldenburg"@de, "Geheimrat Doktor Oldenburg"@en, "Geheimrat Oldenburg"@en ;
   skos:hiddenLabel: "Oldenburg"@de, "Oldenburg"@en ;
   skos:related "Alkmene" ;
   skos:topConceptOf apfelsorte: .
   
+apfelsorte:Golden-Delicious a skos:Concept ;
+  skos:prefLabel "Golden Delicious"@de, "Golden Delicious"@en ;
+  skos:altLabel "Gelber Köstlicher"@de, "Goldener Köstlicher"@de ;
+  skos:note "Kreuzung vermutlich aus Goldreinette und Grimes Golden"@de ;
+  skos:related "Gala", "Jonagold" ;
+  skos:topConceptOf apfelsorte: .
+    
+apfelsorte:Jonagold a skos:Concept ;
+  skos:prefLabel "Jonagold"@de, "Jonagold"@en ;
+  skos:hiddenLabel "Jonagored"@de, "Red Prince"@de, "Jonagored"@en, "Red Prince"@en ;
+  skos:note "Kreuzung aus Golden Delicious und Jonathan"@de ;
+  skos:related "Golden Delicious" ;
+  skos:topConceptOf apfelsorte: .
   
+apfelsorte:Kidds-Orange-Red a skos:Concept ;
+  skos:prefLabel "Kidds Orange Red"@de, "Kidd's Orange Red"@en ;
+  skos:altLabel "Kidd's Orange Red"@de, "Kidds Orange"@de, "Delco apple"@en ;
+  skos:note "Kreuzung aus Cox Orange und Red Delicious"@de ;
+  skos:related "Gala", "Cox-Orange", "Red Delicious" ;
+  skos:topConceptOf apfelsorte: .
+    
+apfelsorte:Red-Delicious a skos:Concept ;
+  skos:prefLabel "Red Delicious"@de, "Red Delicious"@en ;
+  skos:altLabel "Roter Köstlicher"@de, "Stark Delicious"@de ;
+  skos:historyNote "ursprünglich Delicious"@de ;
+  skos:topConceptOf apfelsorte: .
+  
+apfelsorte:Royal-Gala a skos:Concept ;
+  skos:prefLabel "Royal Gala"@de, "Royal Gala"@en ;
+  skos:altLabel "Gala Royal"@de, "Regal Gala"@de ;
+  skos:note "Mutant der Sorte Gala"@de ;
+  skos:broader "Gala" ;
+  skos:inScheme apfelsorte: .
+  
+apfelsorte:Worcester-Parmaene a skos:Concept ;
+  skos:prefLabel "Worcester Parmäne"@de, "Worcester Pearmain"@en ;
+  skos:note "Kreuzung aus Devonshire Quarrenden und einer unbekannten Apfelsorte"@de ;
+  skos:topConceptOf apfelsorte: .
+  
+apfelsorte:parmaene a skos:Collection ;
+  skos:prefLabel "Parmäne"@de, "Pearmain"@en ;
+  skos:member "apfelsorte:Adams-Parmaene", "apfelsorte:Worcester-Parmaene" .
