@@ -12,7 +12,7 @@ apfelsorte: a skos:ConceptScheme ;
   
 apfelsorte:Adams-Parmaene a skos:Concept ;
   skos:prefLabel "Adams Parmäne"@de, "Adams Pearmain"@en ;
-  skos:altLabel "Norfolk Pippin"@de, "Norfolk Russet"@de, "Hanging Pearmain"@de, "Adam's Parmane"@en, "Norfolk Pippin"@en ;
+  skos:altLabel "Norfolk Pippin"@de, "Norfolk Russet"@de, "Hanging Pearmain"@de, "Adam's Parmane"@en, "Hanging Pearmain"@en, "Norfolk Pippin"@en ;
   skos:hiddenLabel "Matchless"@de ;
   skos:topConceptOf apfelsorte: .
 
