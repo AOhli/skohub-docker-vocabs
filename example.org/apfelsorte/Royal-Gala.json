@@ -13,6 +13,10 @@
       "Regal Gala"
     ]
   },
+  "note": {
+    "de": "Mutant der Sorte Gala",
+    "en": "mutant of the cultivar Gala"
+  },
   "broader": {
     "id": "https://example.org/apfelsorte/Gala",
     "prefLabel": {
