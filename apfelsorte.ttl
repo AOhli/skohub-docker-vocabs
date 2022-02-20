@@ -75,7 +75,7 @@ apfelsorte:Red-Delicious a skos:Concept ;
 apfelsorte:Royal-Gala a skos:Concept ;
   skos:prefLabel "Royal Gala"@de, "Royal Gala"@en ;
   skos:altLabel "Gala Royal"@de, "Regal Gala"@de ;
-  skos:note "Mutant der Sorte Gala"@de, "mutant of the cultivar Gala"@de ;
+  skos:note "Mutant der Sorte Gala"@de, "mutant of the cultivar Gala"@en ;
   skos:broader apfelsorte:Gala ;
   skos:inScheme apfelsorte: .
   
