@@ -3,11 +3,11 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 apfelsorte: a skos:ConceptScheme ;
-  dct:title "Apfelsorten"@de, "Kind of Apple"@en ;
+  dct:title "Apfelsorten"@de, "Kinds of Apple"@en ;
   dct:creator "Andrea Ohlinger"@de ;
   dct:created "2022-02-19" ;
   dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  dct:description "Auflistung von Apfelsorten"@de, "Register of kind of apple"@en ;
+  dct:description "Auflistung von Apfelsorten"@de, "Register of kinds of apple"@en ;
   skos:hasTopConcept apfelsorte:Adams-Parmaene, apfelsorte:Alkmene, apfelsorte:Cox-Orange, apfelsorte:Gala, apfelsorte:Geheimrat-Dr.-Oldenburg, apfelsorte:Golden-Delicious, apfelsorte:Jonagold, apfelsorte:Kidds-Orange-Red, apfelsorte:Red-Delicious, apfelsorte:Worcester-Parmaene .
   
 apfelsorte:Adams-Parmaene a skos:Concept ;
@@ -55,7 +55,7 @@ apfelsorte:Jonagold a skos:Concept ;
   skos:prefLabel "Jonagold"@de, "Jonagold"@en ;
   skos:hiddenLabel "Jonagored"@de, "Red Prince"@de, "Jonagored"@en, "Red Prince"@en ;
   skos:note "Kreuzung aus Golden Delicious und Jonathan"@de ;
-  skos:related apfelsorte:Golden-Delicious ;
+  skos:related apfelsorte:Golden-Delicious, "Jonathan"@de ;
   skos:topConceptOf apfelsorte: .
   
 apfelsorte:Kidds-Orange-Red a skos:Concept ;
