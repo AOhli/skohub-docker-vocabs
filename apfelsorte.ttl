@@ -84,6 +84,6 @@ apfelsorte:Worcester-Parmaene a skos:Concept ;
   skos:note "Kreuzung aus Devonshire Quarrenden und einer unbekannten Apfelsorte"@de, "cross between Devonshire Quarrenden and an unknown parent"@en ;
   skos:topConceptOf apfelsorte: .
   
-parmaene: a skos:Collection ;
+apfelsorte:parmaene a skos:Collection ;
   skos:prefLabel "Parmäne"@de, "Pearmain"@en ;
   skos:member apfelsorte:Adams-Parmaene, apfelsorte:Worcester-Parmaene .
