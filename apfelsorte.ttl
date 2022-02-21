@@ -1,6 +1,7 @@
 @prefix apfelsorte: <https://example.org/apfelsorte/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 apfelsorte: a skos:ConceptScheme ;
   dct:title "Apfelsorten"@de, "Kinds of Apple"@en ;
@@ -83,7 +84,3 @@ apfelsorte:Worcester-Parmaene a skos:Concept ;
   skos:prefLabel "Worcester Parmäne"@de, "Worcester Pearmain"@en ;
   skos:note "Kreuzung aus Devonshire Quarrenden und einer unbekannten Apfelsorte"@de, "cross between Devonshire Quarrenden and an unknown parent"@en ;
   skos:topConceptOf apfelsorte: .
-  
-apfelsorte:parmaene a skos:Collection ;
-  skos:prefLabel "Parmäne"@de, "Pearmain"@en ;
-  skos:member apfelsorte:Adams-Parmaene, apfelsorte:Worcester-Parmaene .
